@@ -12,7 +12,7 @@ pipeline {
             steps {     
                 bat 'npm i'
                 bat 'npm install -g typescript'
-                bat 'npm build'
+                bat 'npm run build'
                 }
      
         }    
