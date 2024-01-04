@@ -11,7 +11,8 @@ pipeline {
         stage('Build') {
             steps {     
                 bat 'npm i'
-                bat 'npm tsc && vite build'
+                bat 'npm install -g typescript'
+                bat 'tsc && vite build'
                 }
      
         }    
