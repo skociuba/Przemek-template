@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {     
                 bat 'npm i'
-                bat 'tsc && vite build'
+                bat 'npm tsc && vite build'
                 }
      
         }    
